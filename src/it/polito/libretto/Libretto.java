@@ -15,8 +15,14 @@ public class Libretto {
 	public void add (int voto, String corso,LocalDate data) {
 		
 	}
+	
+	/**
+	 * Aggiunge nuovo voto al libretto
+	 * @param v  il {@link  Voto} da aggiugere
+	 */
+	
 public void add (Voto v) {
-		
+		voti.add(v); 
 	}
 	
 }
