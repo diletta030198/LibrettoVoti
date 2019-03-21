@@ -37,6 +37,17 @@ System.out.format("Il voto %s è %s\n", giusto.toString(),libr.esisteGiaVoto(gius
 System.out.format("il voto %s è %s\n", sbagliato.toString(),libr.esisteGiaVoto(sbagliato)); 
 	System.out.format("il voto %s è %s\n ", mancante.toString(),libr.esisteGiaVoto(mancante)); 
 	
+	System.out.format("Il voto %s è in conflitto %s\n", giusto.toString(),libr.votoInConflitto(giusto)); 
+	
+	System.out.format("il voto %s è in conflitto %s\n", sbagliato.toString(),libr.votoInConflitto(sbagliato)); 
+		System.out.format("il voto %s è in conflitto %s\n ", mancante.toString(),libr.votoInConflitto(mancante)); 
+		
+		
+		System.out.println(libr.add(giusto)); 
+		System.out.println(libr.add(sbagliato)); 
+		System.out.println(libr.add(mancante)); 
+		
+		System.out.println(libr.toString()); 
 	}
 
 }
