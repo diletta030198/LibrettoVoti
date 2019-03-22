@@ -48,6 +48,16 @@ System.out.format("il voto %s è %s\n", sbagliato.toString(),libr.esisteGiaVoto(s
 		System.out.println(libr.add(mancante)); 
 		
 		System.out.println(libr.toString()); 
+		
+		System.out.println("***Migliora il libretto***"); 
+		Libretto migliore= libr.librettoMigliorato(); 
+		
+		System.out.println(libr.toString()); 
+		System.out.println(migliore.toString());
+		
+		System.out.println("***Cancello di voti minori di 24***"); 
+		migliore.cancellaVotiScarsi();
+		System.out.println(migliore.toString());
 	}
 
 }
